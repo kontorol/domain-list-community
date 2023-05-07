@@ -1,4 +1,4 @@
-# Domain list community
+# Hiddify Domain list community
 
 This project manages a list of domains, to be used as geosites for routing purpose in Project V.
 
