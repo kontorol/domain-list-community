@@ -36,6 +36,7 @@ jobs:
 
       - name: Generate hiddify-geosite.dat sha256 hash
         run: |
+          cp dlc.dat hiddify-geosite.dat
           sha256sum hiddify-geosite.dat > hiddify-geosite.dat.sha256sum
 
       - name: Generate Zip
