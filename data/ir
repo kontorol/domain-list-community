@@ -1,2 +1,2 @@
 include:tld-ir
-include:category-ir
+include:category-hiddify-ir!ir
