@@ -23,11 +23,11 @@ jobs:
           go-version-file: code/go.mod
       - name: update lists:
         run: |
-          curl -l -o data/filteryab https://raw.githubusercontent.com/hiddify/filteryab/main/iran/blocked-in-iran
-          curl -l -o data/iran-hosted-domains https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/domains.txt
-          grep -vE '\.ir$' data/iran-hosted-domains > data/iran-hosted-domains-!ir
-          curl -l -o data/sanction-list-fod https://github.com/hiddify/fod/blob/master/domains
-          sed -i 's/^.//' data/sanction-list-fod
+          curl -l -o data/hiddify-ir-filteryab https://raw.githubusercontent.com/hiddify/filteryab/main/iran/blocked-in-iran
+          curl -l -o data/hiddify-ir-iran-hosted-domains https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/domains.txt
+          grep -vE '\.ir$' data/hiddify-ir-iran-hosted-domains > data/hiddify-ir-iran-hosted-domains-!ir
+          curl -l -o data/hiddify-ir-sanction-list-fod https://github.com/hiddify/fod/blob/master/domains
+          sed -i 's/^.//' data/hiddify-ir-sanction-list-fod
 
 
           
