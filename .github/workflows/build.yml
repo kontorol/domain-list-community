@@ -30,8 +30,8 @@ jobs:
           curl -L -o data/hiddify-ir-iran-hosted-domains https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/domains.txt
           echo "removing .ir domains"
           grep -vE '\.ir$' data/hiddify-ir-iran-hosted-domains > 'data/hiddify-ir-iran-hosted-domains-!ir'
-          echo "Downloading from https://github.com/freedomofdevelopers/fod/blob/master/domains"
-          curl -L -o data/hiddify-ir-sanction-list-fod https://github.com/freedomofdevelopers/fod/blob/master/domains
+          echo "Downloading from https://raw.githubusercontent.com/freedomofdevelopers/fod/master/domains"
+          curl -L -o data/hiddify-ir-sanction-list-fod https://raw.githubusercontent.com/freedomofdevelopers/fod/master/domains
           echo "removing . from hiddify-ir-sanction-list-fod"
           sed -i 's/^.//' data/hiddify-ir-sanction-list-fod
           cd ..
