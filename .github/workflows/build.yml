@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout codebase
+      - name: Checkout codebasegrep -vE '\.ir$' data/hiddify-ir-iran-hosted-domains > "data/hiddify-ir-iran-hosted-domains-!ir"
         uses: actions/checkout@v3
         with:
           path: code
