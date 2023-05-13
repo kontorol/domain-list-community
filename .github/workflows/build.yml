@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version-file: code/go.mod
-      - name: update lists:
+      - name: update lists
         run: |
           curl -l -o data/hiddify-ir-filteryab https://raw.githubusercontent.com/hiddify/filteryab/main/iran/blocked-in-iran
           curl -l -o data/hiddify-ir-iran-hosted-domains https://github.com/bootmortis/iran-hosted-domains/releases/latest/download/domains.txt
