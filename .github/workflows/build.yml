@@ -48,7 +48,7 @@ jobs:
       - name: Build geosite.dat file
         run: |
           cd code || exit 1
-          go run ./ --outputdir=../ --exportlists=tld-ir,ir,gfw-cn,gfw-ir,sanction-ir,category-ads-all,tld-cn,cn,tld-\!cn,geolocation-\!cn,apple,icloud
+          go run ./ --outputdir=../ --exportlists=tld-ir,ir,gfw-cn,gfw-ir,warp,sanction-ir,category-ads-all,tld-cn,cn,tld-\!cn,geolocation-\!cn,apple,icloud
           cd ../ && rm -rf code
 
       - name: Generate geosite.dat sha256 hash
