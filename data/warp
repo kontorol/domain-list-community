@@ -1,9 +1,10 @@
 include:category-media
-include:games
-include:entertainment
+include:category-games
+include:category-entertainment
 include:brightcove
 include:tver
 include:bilibili
+include:bilibili2
 include:iqiyi
 include:dmm
 include:verizon
